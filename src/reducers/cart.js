@@ -20,7 +20,7 @@ export default (state = [], action = {}) => {
       return state.filter(i => i.id !== action.item.id);
     case CLEAR_CART:
       return [];
+    default :
+      return state;
   }
-
-  return state;
 };
